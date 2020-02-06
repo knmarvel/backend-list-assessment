@@ -25,8 +25,11 @@
 
 
 def match_ends(words):
-    """Your code goes here.  Edit this docstring."""
-    return
+    num_of_matching_strings = 0
+    for a_string in words:
+        if len(a_string) > 1 and a_string[0] == a_string[-1]:
+            num_of_matching_strings += 1
+    return num_of_matching_strings
 
 
 # B. front_x
